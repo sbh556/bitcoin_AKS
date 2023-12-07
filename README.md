@@ -46,6 +46,7 @@ Inside of the directory AKS_Terraform run apply the terraform file
 
 ```
 cd AKS_Terraform
+terraform init
 terraform apply --auto-approve
 ```
 continue with the steps inside of the AKS_Deployments directory
