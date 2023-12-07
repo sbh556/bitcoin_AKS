@@ -1,5 +1,5 @@
 # Use the python-slim-buster as the base image
-FROM python:3.10-slim-buster
+FROM --platform=linux/amd64 python:3.10-slim-buster
 
 # Exposing the port for the api
 EXPOSE 8080
@@ -17,7 +17,7 @@ RUN python -m ensurepip --upgrade
 RUN pip3 install --upgrade pip && \
     pip3 install -r requirements.txt
 
-RUN python3 ./BackgroundTasks.py > output.txt
+ENV PYTHONUNBUFFERED=1
 
 # Define the executable
 ENTRYPOINT [ "python3" ]

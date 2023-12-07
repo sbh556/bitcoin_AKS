@@ -1,5 +1,5 @@
 # Use the python-slim-buster as the base image
-FROM python:3.10-slim-buster
+FROM --platform=linux/amd64 python:3.10-slim-buster
 
 # Exposing the port for the api
 EXPOSE 8080

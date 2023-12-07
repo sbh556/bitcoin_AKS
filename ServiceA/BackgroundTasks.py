@@ -36,7 +36,7 @@ def getBitcoinAvg(bitcoinList):
     """
     return sum(bitcoinList)/len(bitcoinList)
 
-def main():
+def StartChecking():
     """
     The main function continuously retrieves the current bitcoin value every minute, stores it in a list
     for the last ten minutes, and calculates and prints the average value if ten minutes have passed.
@@ -54,6 +54,3 @@ def main():
             print(outputline)
             lastTenMinutes = []
         time.sleep(60)
-
-if __name__ == '__main__':
-    main()

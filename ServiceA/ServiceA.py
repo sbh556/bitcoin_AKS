@@ -1,7 +1,18 @@
 import requests
 from datetime import datetime
 from flask import Flask
+import BackgroundTasks
+import threading
+import logging
+
+
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
 app = Flask(__name__)
+
+def bgJob():
+    thread = threading.Thread(target=BackgroundTasks.StartChecking)
+    thread.start()
 
 @app.route('/',methods = ['GET'])
 def get_current_data(coin='BTC', tocoin='USD'):
@@ -26,6 +37,9 @@ def get_current_data(coin='BTC', tocoin='USD'):
     currentTime = (datetime.utcnow()).strftime("%d-%m-%Y %H:%MUTC")
     outputline = "ServiceA, Bitcoin value is {value}$ for {currentTime}".format(value=res["USD"],currentTime=currentTime)
     return outputline
+
+with app.app_context():
+    bgJob()
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0',port=8080)
