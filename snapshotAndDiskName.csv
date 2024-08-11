@@ -1,0 +1,6 @@
+disk_subscription,disk_resourcegroup,disk_name,snapshot_nameTurkiz-Starfish-MetaData-DEV-001,ocp-blackedition-hcq4w-rg,ocp-blackedition-hcq4w-dynamic-pvc-1ce7e8c8-39d7-48e1-a495-30231c3ffe6a,snapshot-1-11-08-2024
+Turkiz-Starfish-MetaData-DEV-001,ocp-blackedition-hcq4w-rg,ocp-blackedition-hcq4w-dynamic-pvc-62769912-cfa6-4aef-83a0-f60263f60c24,snapshot-2-11-08-2024
+Turkiz-Starfish-MetaData-DEV-001,ocp-blackedition-hcq4w-rg,ocp-blackedition-hcq4w-dynamic-pvc-72e3667c-05dc-40bc-95f3-c24a7948f4e9,snapshot-3-11-08-2024
+Turkiz-Starfish-MetaData-DEV-001,ocp-blackedition-hcq4w-rg,ocp-blackedition-hcq4w-dynamic-pvc-d7e58857-d93b-4a8d-b6a6-df4f194b6750,snapshot-4-11-08-2024
+Pink-Flamingo-GalatzArcive-PRD-001,netapp-ezrachi-tlv-rg,Cloud-Restore-Instance-account-xIY5zrW6_OS__1_4e58ecbdce6c4f74924b76252649970d,snapshot-5-11-08-2024
+Pink-Flamingo-GalatzArcive-PRD-001,netapp-ezrachi-tlv-rg,Cloud-Restore-Instance-account-xIY5zrW6_disk2_8c907923ae7d40b987ad1a66075c2662,snapshot-6-11-08-2024
